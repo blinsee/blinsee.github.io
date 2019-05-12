@@ -1,0 +1,233 @@
+html {
+margin: 0;
+padding: 0;
+}
+body {
+font-family : "Handlee", cursive;
+font-size: 13pt;
+background-color: #efefef;
+padding: 10px;
+margin: 0;
+}
+h1 {
+	font-size: 15pt;
+	color: #820038;
+	text-align: center;
+	padding: 18px 0 18px 0;
+	margin: 0 0 10px 0;
+}
+h1 span {
+	border: 4px dashed #440038;
+	padding: 10px;
+}
+p {
+	padding: 0;
+	margin: 0;
+}
+.img-circle {
+	border: 3px solid white;
+	border-radius: 50%;
+}
+.section {
+	background-color: #fff;
+	padding: 15px;
+	margin-bottom: 10px;
+	border-radius: 10px;
+}
+#header {
+	background-image: url("https://i.gifer.com/76YM.gif");
+	background-size: cover;
+	height: 200px;
+}
+#header img {
+	display: block;
+	width: 80px;
+	height: 80px;
+	margin: auto;
+}
+
+#header p{
+	font-size: 12pt;
+	color: #fbfce5;
+	padding-top: 5px;
+	margin: 0;
+	font-weight: bold;
+	text-align: center;
+}
+.quote {
+	font-size: 25pt;
+	text-align: right;
+	margin-top: 10px;
+}
+table {
+	width: 100%;
+	font-size: 11pt;
+}
+table, th, td {
+	border: 2px solid #cecece;
+	border-collapse: collapse;
+	text-align: center;
+	table-layout: fixed;
+}
+.selected {
+	background-color: #b60045;
+	font-weight: bold;
+	color: white;
+}
+li {
+	margin-bottom: 15px;
+	font-weight: bold;
+}
+progress {
+	width: 70%;
+	height: 20px;
+	color: #3fb6b2;
+	background: #efefef;
+}
+progress::-webkit-progress-bar {
+	background: #efefef;
+}
+progress::-webkit-progress-value {
+	background: #3fb6b2;
+}
+progress::-moz-progress-bar {
+	background: #efefef;
+}
+iframe, audio {
+	display:  block;
+	margin: 0 auto;
+	border: 5px solid #990040;
+}
+hr {
+	border: 0;
+	height: 1px;
+	background: #f36f48;
+}
+form {
+	text-align: center;
+	margin-top: 0;
+}
+.submit {
+	background-color: #3fb6b2;
+	padding: 12px 45px;
+	border-radius: 5px;
+	cursor: pointer;
+	color: #ffffff;
+	border: none;
+	margin: 0;
+	font-weight: bold;
+}
+.submit:hover {
+	background-color: #43a09d;
+}
+textarea {
+	height: 100px;
+}
+input, textarea {
+	margin-bottom: 10px;
+	font-size: 11pt;
+	border: 1px solid #cecece;
+	background-color: #efefef;
+	color: #787575;
+	border-radius: 5px;
+	width: 70%;
+	outline: none;
+}
+.face {
+	transform: scale(0.4);
+	margin: 0 auto;
+	display: block;
+	margin-top: -35px;
+	margin-bottom: -25px;
+}
+#contacts img {
+	height: 80px;
+	width: 80px;
+	margin-left: 7px;
+	margin-right: 7px;
+}
+#contacts a {
+	text-decoration: none;
+}
+#contacts img:hover {
+	opacity: 0.8;
+}
+#contacts {
+	text-align: center;
+}
+.copyright {
+	font-size: 8pt;
+	text-align: right;
+	padding-bottom: 10px;
+	color: grey;
+}
+/*| Navigation |*/
+
+
+*, *:before, *:after{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+nav{
+   position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 3px 10px -2px rgba(0,0,0,.1);
+  border: 1px solid rgba(0,0,0,.1);
+  font-family: 'Lato', sans-serif;
+}
+nav ul{
+    list-style: none;
+    position: relative;
+    float: right;
+    margin-right: 100px;
+    display: inline-table;
+  }
+    nav ul li{
+      float: left;
+      -webkit-transition: all .2s ease-in-out;
+      -moz-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out;
+    }
+
+    nav ul li:hover{background: rgba(0,0,0,.15);}
+    nav ul li:hover > ul{display: block;}
+    nav ul li{
+      float: left;
+      -webkit-transition: all .2s ease-in-out;
+      -moz-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out;
+    }
+      nav ul li a{
+        display: block; 
+        padding: 12px 20px;
+        color: #222; 
+        font-size: .9em;
+        letter-spacing: 1px;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+      nav ul ul{
+        display: none;
+        background: #fff;
+        position: absolute; 
+        top: 100%;
+        box-shadow: -3px 3px 10px -2px rgba(0,0,0,.1);
+        border: 1px solid rgba(0,0,0,.1);
+      }
+        nav ul ul li{float: none; position: relative;}
+          nav ul ul li a {
+            padding: 15px 30px; 
+            border-bottom: 1px solid rgba(0,0,0,.05);
+          }
+          nav ul ul ul {
+            position: absolute; 
+            left: 100%; 
+            top:0;
+          }	
